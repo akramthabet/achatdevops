@@ -6,7 +6,6 @@ services:
     container_name: mysqldb
     restart: unless-stopped
     environment:
-      - MYSQL_ALLOW_EMPTY_PASSWORD=1
       - MYSQL_DATABASE=achatdb
     ports:
       - 3306:3306
